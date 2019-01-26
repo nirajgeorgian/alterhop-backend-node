@@ -1,5 +1,5 @@
-export const home = (req, res) => {
-	res.send({
+export const home = async (req, res) => {
+	await res.send({
 		host: req.headers.host,
 		message: 'API up and running.',
 	})
